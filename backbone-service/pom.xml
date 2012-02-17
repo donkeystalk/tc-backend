@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>backbone-service</groupId>
+  <artifactId>backbone-service</artifactId>
+  <version>1.0</version>
+  <packaging>war</packaging>
+  
+  <properties>
+  	<jersey.version>0.9-ea</jersey.version>
+  	<jpa.version>2.0.0</jpa.version>
+  	<hibernate.version>3.5.6-Final</hibernate.version>
+  	<spring.version>3.1.0.RELEASE</spring.version>
+  	<spring.data>1.0.3.RELEASE</spring.data>
+  </properties>
+  
+  <dependencies>
+  
+  	<!-- Web Layer -->
+  	<dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-web</artifactId>
+	  <version>${spring.version}</version>
+  	</dependency>
+  
+  	<!-- Service Layer -->
+  	<dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-core</artifactId>
+	  <version>${spring.version}</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-context</artifactId>
+	  <version>${spring.version}</version>
+	</dependency>
+	
+	<!-- DAO -->
+	<dependency>
+	  <groupId>commons-dbcp</groupId>
+	  <artifactId>commons-dbcp</artifactId>
+	  <version>1.4</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework.data</groupId>
+		<artifactId>spring-data-jpa</artifactId>
+		<version>${spring.data}</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-orm</artifactId>
+	  <version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.18</version>
+		<scope>provided</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.hibernate.javax.persistence</groupId>
+		<artifactId>hibernate-jpa-2.0-api</artifactId>
+		<version>1.0.0.Final</version>
+	</dependency>
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-entitymanager</artifactId>
+		<version>${hibernate.version}</version>
+		<scope>runtime</scope>
+	</dependency>
+	
+	<!-- Test -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-test</artifactId>
+		<version>${spring.version}</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+	  <groupId>junit</groupId>
+	  <artifactId>junit</artifactId>
+	  <version>4.10</version>
+	  <scope>test</scope>
+	</dependency>
+	
+	
+	<!-- Logging -->
+	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.16</version>
+	</dependency>
+	
+  </dependencies>
+  
+</project>
