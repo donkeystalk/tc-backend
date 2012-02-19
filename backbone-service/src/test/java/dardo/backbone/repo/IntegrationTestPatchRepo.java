@@ -13,7 +13,7 @@ import dardo.backbone.model.Patch;
 
 @ContextConfiguration(locations={"classpath:config/applicationContext.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
-public class TestPatchRepo {
+public class IntegrationTestPatchRepo {
 	
 	@Autowired
 	private PatchRepo repo;
